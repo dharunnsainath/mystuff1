@@ -1,0 +1,12 @@
+
+.box{
+  
+  text-align: center;
+  background-color: orange;
+  color: white;
+  width: calc(30% - 100px);
+  padding: 10px ;
+  
+  
+}
+  

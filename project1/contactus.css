@@ -1,0 +1,132 @@
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  .highlight{
+    background-color: white;
+    color: black;
+  }
+  * {
+    margin: 0;
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+  }
+
+  
+  
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 95%;
+    height: 60%;
+    background-image: url("office2.webp");
+    background-size: cover;
+    filter: blur(15px); 
+    z-index: -1;
+  }
+
+  .header
+  {
+    height: 22rem;
+    display: flex;
+   
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom:3rem;
+  }
+
+  .header1 {
+    font-size: 2em;
+    font-weight: 600;
+  }
+
+  .header2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .h2-right{
+    width: 60%;
+    font-size: 1.5rem;
+  }
+
+  .container
+  {
+    width: 80%;
+  }
+  .header-3{
+    display: flex;
+    width: 60%;
+    
+    box-sizing: border-box;
+    padding: 0rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.bottom-header
+{
+  margin-top:3.5rem;
+  
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.right-bh{
+  width: 50%;
+  font-size: 1.25rem;
+}
+  
+
+.h3-2{
+    margin-left:1rem;
+    border: 1px solid white;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 0;
+
+    /* padding: 0 0.3rem; */
+}
+
+.h3-2:hover{
+    background-color: white;
+    color:black;
+}
+
+
+
+
+.main-1{
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  
+  
+}
+
+.main1-c{
+  border: 2px solid white;
+  padding: 0rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top:none;
+  
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./mainpage.css" /> 
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+
+          <h1>Movie Booking App</h1>
+          <div id="div1">
+              <button class="button1">
+                <a href="#" id='loginlink' style="text-decoration: none">LOGIN</a>
+              </button>
+              <button class="button1">
+                <a href="#" style="text-decoration: none">SIGN UP</a>
+              </button>
+          </div>
+          <div id="div2">
+            <button class="button1" onclick=logout()>
+              <a href="index.html" style="text-decoration: none">LOGOUT</a>
+            </button>
+          </div>
+            <!-- <h1>Movie Booking App</h1>
+            <div class="user-stuff"  >
+                <button><a href='#' style="text-decoration: none;" id="signinLink" onclick=signinAction()>LOGIN</a></button>
+                <br>
+                <button><a href='/signup.html' style="text-decoration: none;" id="sinupLink">SIGN UP</a></button>
+            </div>
+
+            
+           
+            
+            <div class="user-stuff1"   id="home-container1" class="hidden">
+                <button><a href='#' style="text-decoration: none;" id="signinLink" onclick=signinAction()>LOGOUT</a></button>
+                <br>
+                <!-- <button><a href='/signup.html' style="text-decoration: none;" id="sinupLink">SIGN UP</a></button> -->
+            </div> 
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+        
+        
+        <div class="movie-list">
+          <div class="movie-card" onclick=clickMovie(1)>
+            <!-- <img class="movie-image" src="movie1.jpg" alt="Movie 1"> -->
+            <h2 id='movie-1-title' class="movie-title">Movie 1</h2>
+            <p class="movie-genre">Action, Thriller</p>
+            <p class="movie-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a class="booking-button" href="movie.html">Book Now</a>
+          </div>
+          
+          <div class="movie-card" onclick="clickMovie(2)">
+            <!-- <img class="movie-image" src="movie2.jpg" alt="Movie 2"> -->
+            <h2 class="movie-title">Movie 2</h2>
+            <p class="movie-genre">Comedy, Romance</p>
+            <p class="movie-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a class="booking-button" href="movie.html">Book Now</a>
+          </div>
+
+         
+            <div class="movie-card" onclick=clickMovie(3)>
+              <!-- <img class="movie-image" src="movie1.jpg" alt="Movie 1"> -->
+              <h2 class="movie-title">Movie 3</h2>
+              <p class="movie-genre">Action, Thriller</p>
+              <p class="movie-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a class="booking-button" href="movie.html">Book Now</a>
+            </div>
+            
+            <div class="movie-card" onclick=clickMovie(4)>
+              <!-- <img class="movie-image" src="movie2.jpg" alt="Movie 2"> -->
+              <h2 class="movie-title">Movie 4</h2>
+              <p class="movie-genre">Comedy, Romance</p>
+              <p class="movie-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a class="booking-button" href="movie.html">Book Now</a>
+            </div>
+
+            <div class="movie-card" onclick=clickMovie(5)>
+                <!-- <img class="movie-image" src="movie1.jpg" alt="Movie 1"> -->
+                <h2 class="movie-title">Movie 5</h2>
+                <p class="movie-genre">Action, Thriller</p>
+                <p class="movie-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a class="booking-button" href="movie.html">Book Now</a>
+              </div>
+              
+              <div class="movie-card" onclick=clickMovie(3)>
+                <!-- <img class="movie-image" src="movie2.jpg" alt="Movie 2"> -->
+                <h2 class="movie-title">Movie 6</h2>
+                <p class="movie-genre">Comedy, Romance</p>
+                <p class="movie-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <a class="booking-button" href="movie.html">Book Now</a>
+              </div>
+
+
+              <script src="mainpage.js"></script>
+            </body>
+</html>

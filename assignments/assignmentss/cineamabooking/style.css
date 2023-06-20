@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .form-container input[type="text"],
+  .form-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-container input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+
+  .form-container button,a{
+    background-color: #45a049;
+    color: white;
+    width: 200px;
+    height: 50px;
+    margin: 20px; 
+    
+  }
+
+  #home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home-container button{
+    border: 3px solid black;
+  }
+
+  #email-error {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    display: none;
+  }
+
+  #password-error{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    display: none;
+
+  }
+
+  #name-error{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    display: none;
+
+  }

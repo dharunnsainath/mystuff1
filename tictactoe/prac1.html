@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- <body>
+    <div id="content">
+        <h2>Helo</h2>
+        <h2>This</h2>
+        <h2>is</h2>
+        <h2>Abraham</h2>
+        <h2>Lincoln</h2>
+    </div> -->
+
+
+    <div id="container">
+        <ul id="users">
+
+        </ul>
+
+        <form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+            <h3>Add Post</h3>
+            <input type="text" id="title" placeholder="title"><br>
+    
+            <textarea placeholder="body" id="body"></textarea><br>
+            <input type="submit" value="Submit" />
+        </form>
+        <!-- <div id="result">
+
+        </div> -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script>
+
+
+        $(function()
+        {
+            // $('#result').load('test.html',function(responseText,statusTxt,xhr)
+            // {
+            //     if(statusTxt=='success')
+            //     {
+            //         alert('It went fine')
+            //     }
+            //     else if(statusTxt=='error')
+            //     {
+            //         alert('Error: '+xhr.statusText)
+            //     }
+            // });
+
+
+            $.getJSON('users.json',function(data)
+            {
+                $.each(data,function(i,user){
+                    $('ul#users').append(
+                        '<li>'+user.firstName + ' '+user.lastName+'</li> '
+                    )
+
+                })
+            })
+
+            // $.ajax({
+            //     method:'GET',
+            //     url:'https://jsonplaceholder.typicode.com/posts',
+            //     dataType: 'json'
+            // }).done(function(data)
+            // {
+            //     console.log(data)
+            //     $.map(data, function(post, i){
+            //         $('#result').append('<h3>'+post.title+'</h3><p>'+post.body+'</p>')
+            //     })
+            // })
+
+            $('#postForm').submit(function(e){
+				e.preventDefault();
+                console.log('helllo')
+				var title = $('#title').val();
+				var body = $('#body').val();
+				var url = $(this).attr('action');
+
+				$.post(url, {title:title, body:body}).done(function(data){
+					console.log('Post Saved');
+					console.log(data);
+				});
+			});
+        })
+
+
+
+
+    </script>
+
+</body>
+</html>

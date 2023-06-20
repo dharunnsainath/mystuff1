@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Check Integers</title>
+  <script>
+    function checkIntegers() {
+      var num1 = parseInt(document.getElementById("num1").value);
+      var num2 = parseInt(document.getElementById("num2").value);
+      
+      var result = (num1 > 0 && num2 < 0) || (num1 < 0 && num2 > 0);
+      
+      document.getElementById("result").innerHTML = "Result: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>Check Integers</h2>
+  
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1" required><br><br>
+  
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2" required><br><br>
+  
+  <input type="button" value="Check Integers" onclick="checkIntegers()"><br><br>
+  
+  <div id="result"></div>
+</body>
+</html>

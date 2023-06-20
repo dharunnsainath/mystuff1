@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Absolute Difference</title>
+  <script>
+    function computeAbsoluteDifference() {
+      var specifiedNumber = parseFloat(document.getElementById("specifiedNumber").value);
+      var absoluteDifference = Math.abs(specifiedNumber - 19);
+      
+      var result;
+      if (specifiedNumber > 19) {
+        result = 3 * absoluteDifference;
+      } else {
+        result = absoluteDifference;
+      }
+      
+      document.getElementById("result").innerHTML = "Result: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>Absolute Difference</h2>
+  
+  <label for="specifiedNumber">Specified Number:</label>
+  <input type="number" id="specifiedNumber" required><br><br>
+  
+  <input type="button" value="Compute Difference" onclick="computeAbsoluteDifference()"><br><br>
+  
+  <div id="result"></div>
+</body>
+</html>
+
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Check Numbers for 50</title>
+  <script>
+    function checkNumbers() {
+      var num1 = parseFloat(document.getElementById("num1").value);
+      var num2 = parseFloat(document.getElementById("num2").value);
+      
+      var result = (num1 === 50 || num2 === 50 || num1 + num2 === 50);
+      
+      document.getElementById("result").innerHTML = "Result: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>Check Numbers for 50</h2>
+  
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1" required><br><br>
+  
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2" required><br><br>
+  
+  <input type="button" value="Check Numbers" onclick="checkNumbers()"><br><br>
+  
+  <div id="result"></div>
+</body>
+</html>
+

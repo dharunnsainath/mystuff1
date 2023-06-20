@@ -1,0 +1,19 @@
+.image-container {
+  position: relative;
+  width: 300px; /* Adjust this value to fit your desired container size */
+  height: 200px; /* Adjust this value to fit your desired container size */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.image:hover {
+  opacity: 0;
+}

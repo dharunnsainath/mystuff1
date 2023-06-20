@@ -1,0 +1,25 @@
+.cont{
+  display: flex;  
+  justify-content:space-around;
+  width: 50%;
+}
+
+.box-1{
+  background-color:aqua;
+  height: 100px;
+  width: 25%;
+}
+
+.box-2{
+  background-color:white;
+  height: 100px;
+  border: 10px solid purple;
+  width: 25%;
+  box-sizing: border-box;
+}
+
+.box-3{
+  background-color:  blue;
+  height: 100px;
+  width: 25%;
+}

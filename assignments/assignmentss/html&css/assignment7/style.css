@@ -1,0 +1,12 @@
+.zebra-table tr:nth-child(even) {
+    background-color: yellow;
+  }
+
+table,td,th{
+    border: 1px solid white;
+}
+
+th{
+    background-color: aliceblue;
+}
+

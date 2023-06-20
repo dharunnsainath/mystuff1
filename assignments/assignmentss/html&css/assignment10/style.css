@@ -1,0 +1,14 @@
+
+
+button{
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px;
+    border-radius: 20px;
+    border: 2px dotted white;
+    display: inline-block;
+    outline: 2px solid blue;
+}
+    
+

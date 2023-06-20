@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Variable with User-Defined Name</title>
+  <script>
+    function createVariable() {
+      var userInput = document.getElementById("variableName").value;
+      var variableValue = document.getElementById("variableValue").value;
+
+      // Creating an object to associate user-defined name with its value
+      var userVariables = {};
+      userVariables[userInput] = variableValue;
+
+      // Accessing the created variable
+      var result = userVariables[userInput];
+      document.getElementById("result").innerHTML = "Variable '" + userInput + "' has a value of: " + result;
+    }
+  </script>
+</head>
+<body>
+  <h2>Create Variable with User-Defined Name</h2>
+  
+  <label for="variableName">Variable Name:</label>
+  <input type="text" id="variableName" required><br><br>
+  
+  <label for="variableValue">Variable Value:</label>
+  <input type="text" id="variableValue" required><br><br>
+  
+  <input type="button" value="Create Variable" onclick="createVariable()"><br><br>
+  
+  <div id="result"></div>
+</body>
+</html>
+
